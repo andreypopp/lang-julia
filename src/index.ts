@@ -66,6 +66,8 @@ let language = LezerLanguage.define({
       styleTags,
       indentNodeProp.add({
         ...syntaxConfig.indents,
+        ModuleDefinition: indent.noIndent,
+        BareModuleDefinition: indent.noIndent,
         VariableDeclaration: indent.continuedIndent(),
         AssignmentExpression: indent.continuedIndent(),
       }),
