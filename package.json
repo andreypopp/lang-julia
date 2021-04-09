@@ -1,0 +1,43 @@
+{
+  "name": "lang-julia",
+  "version": "0.1.0",
+  "description": "Julia language support for the CodeMirror code editor",
+  "scripts": {
+    "prepare": "cm-buildhelper src/index.ts"
+  },
+  "keywords": [
+    "editor",
+    "code"
+  ],
+  "author": {
+    "name": "Andrey Popp",
+    "email": "me@andreypopp.com",
+    "url": "https://andreypopp.com"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/highlight": "^0.18.0",
+    "@codemirror/language": "^0.18.0",
+    "@codemirror/autocomplete": "^0.18.0",
+    "@codemirror/state": "^0.18.0",
+    "@codemirror/view": "^0.18.0",
+    "lezer-julia": "^0.1.0"
+  },
+  "devDependencies": {
+    "@codemirror/buildhelper": "^0.1.0",
+    "lezer": "^0.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreypopp/lang-julia.git"
+  }
+}
