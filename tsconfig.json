@@ -21,12 +21,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "baseUrl": ".",
-    "outDir": "node_modules/.cache/tsbuild",
-    "paths": {
-      "lang-julia": [
-        "../lang-julia/src/index.ts"
-      ]
-    }
+    "outDir": "node_modules/.cache/tsbuild"
   },
   "include": [
     "./**/*.ts"
