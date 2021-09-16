@@ -1,7 +1,7 @@
-import { NodeType, NodeProp } from "lezer";
+import { NodeType, NodeProp } from "@lezer/common";
 import { parser } from "lezer-julia";
 import {
-  LezerLanguage,
+  LRLanguage,
   LanguageSupport,
   indentNodeProp,
 } from "@codemirror/language";
@@ -60,7 +60,7 @@ let styleTags = highlight.styleTags({
   MacroIdentifier: highlight.tags.macroName,
 });
 
-let language = LezerLanguage.define({
+let language = LRLanguage.define({
   parser: parser.configure({
     props: [
       styleTags,
