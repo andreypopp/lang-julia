@@ -67,8 +67,8 @@ let styleTags = highlight.styleTags({
 
   Identifier: highlight.tags.variableName,
   "MacroIdentifier! MacroFieldExpression!": highlight.tags.macroName,
-  FieldName: highlight.tags.propertyName,
-  Symbol: highlight.tags.atom,
+  "FieldName!": highlight.tags.propertyName,
+  "Symbol!": highlight.tags.atom,
 });
 
 let language = LRLanguage.define({
