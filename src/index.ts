@@ -48,16 +48,27 @@ function getSyntaxConfig(): SyntaxConfig {
 let syntaxConfig = getSyntaxConfig();
 
 let styleTags = highlight.styleTags({
-  Identifier: highlight.tags.variableName,
   String: highlight.tags.string,
   TripleString: highlight.tags.string,
+  CommandString: highlight.tags.string,
+  StringWithoutInterpolation: highlight.tags.string,
+  TripleStringWithoutInterpolation: highlight.tags.string,
+  CommandStringWithoutInterpolation: highlight.tags.string,
+
   Comment: highlight.tags.lineComment,
   BlockComment: highlight.tags.comment,
   [syntaxConfig.keywords.map((t) => t.name).join(" ")]: highlight.tags.keyword,
   "( )": highlight.tags.paren,
   "[ ]": highlight.tags.paren,
   "{ }": highlight.tags.paren,
-  MacroIdentifier: highlight.tags.macroName,
+
+  BooleanLiteral: highlight.tags.bool,
+  Number: highlight.tags.number,
+
+  Identifier: highlight.tags.variableName,
+  "MacroIdentifier! MacroFieldExpression!": highlight.tags.macroName,
+  FieldName: highlight.tags.propertyName,
+  Symbol: highlight.tags.atom,
 });
 
 let language = LRLanguage.define({
