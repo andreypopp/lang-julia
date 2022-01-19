@@ -1,6 +1,6 @@
 {
-  "name": "lang-julia",
-  "version": "0.2.0-beta.0",
+  "name": "@plutojl/lang-julia",
+  "version": "0.2.0",
   "description": "Julia language support for the CodeMirror code editor",
   "scripts": {
     "prepare": "cm-buildhelper src/index.ts"
@@ -30,13 +30,13 @@
     "@codemirror/language": "^0.19.0",
     "@codemirror/state": "^0.19.0",
     "@lezer/common": "^0.15.0",
-    "lezer-julia": "github:lezer-parser/julia#dral-fixes"
+    "@plutojl/lezer-julia": "^0.4.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreypopp/lang-julia.git"
+    "url": "https://github.com/JuliaPluto/lang-julia.git"
   }
 }
