@@ -1,3 +1,5 @@
+**DEPRECATED: see https://github.com/JuliaPluto/lang-julia instead**
+
 # lang-julia
 
 This package implements [Julia][] language support for the [CodeMirror 6][] code
